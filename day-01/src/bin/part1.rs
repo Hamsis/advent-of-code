@@ -20,7 +20,7 @@ fn process(input: &str) -> u32 {
         println!(
             "Line: {}, value {}{}",
             line,
-            first_digit.unwrap(),
+            first_digit.unwrap_or_default(),
             last_digit
         );
         sum = sum + first_digit.unwrap_or_default() * 10 + last_digit;
