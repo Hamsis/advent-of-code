@@ -4,8 +4,8 @@ fn main() {
     dbg!(output);
 }
 
-fn process(input: &str) -> String {
-    "todo!".to_string()
+fn process(input: &str) -> u32 {
+    return 4;
 }
 
 #[cfg(test)]
@@ -15,6 +15,6 @@ mod tests {
     #[test]
     fn it_works() {
         let result = process("test");
-        assert_eq!(result, "4".to_string());
+        assert_eq!(result, 4);
     }
 }
